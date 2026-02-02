@@ -4,10 +4,10 @@ import { useRef } from 'react';
 import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 
 const shorts = [
-    { id: 'IzL6SaXuGa0', title: 'Brand Awareness Reel' },
-    { id: 'yteRIwT3Dus', title: 'Product Selling Reel' },
     { id: 'akudHGEr_0A', title: 'Local Business Promo' },
-    { id: 'K4lu-4A4VAM', title: 'New Portfolio Short' }
+    { id: 'K4lu-4A4VAM', title: 'New Portfolio Short' },
+    { id: 'SsvKjU1hD5Y', title: 'Service Experience Short' },
+    { id: 'xIG7Z-cALAo', title: 'Marketing Strategy Short' }
 ];
 
 const carousels = [
