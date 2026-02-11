@@ -30,7 +30,7 @@ const Navbar = () => {
                     {['Services', 'Our Work', 'Pricing', 'FAQ'].map((item) => (
                         <Link
                             key={item}
-                            href={`#${item.toLowerCase().replace(' ', '-')}`}
+                            href={item === 'Services' ? '/#services' : `/#${item.toLowerCase().replace(' ', '-')}`}
                             className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors"
                         >
                             {item}
@@ -63,7 +63,7 @@ const Navbar = () => {
                         {['Services', 'Our Work', 'Pricing', 'FAQ'].map((item) => (
                             <Link
                                 key={item}
-                                href={`#${item.toLowerCase().replace(' ', '-')}`}
+                                href={item === 'Services' ? '/#services' : `/#${item.toLowerCase().replace(' ', '-')}`}
                                 onClick={() => setMobileMenuOpen(false)}
                                 className="text-lg font-medium text-slate-900 hover:text-blue-600 transition-colors"
                             >

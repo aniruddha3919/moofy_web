@@ -28,6 +28,17 @@ const Footer = () => {
                     </div>
 
                     <div>
+                        <h4 className="font-bold mb-6">Local Services</h4>
+                        <ul className="space-y-4 text-slate-400 text-sm">
+                            <li><a href="/social-media-management-kolkata" className="hover:text-blue-400 transition-colors">SMM in Kolkata</a></li>
+                            <li><a href="/social-media-management-baguiati" className="hover:text-blue-400 transition-colors">SMM in Baguiati</a></li>
+                            <li><a href="/website-development-baguiati" className="hover:text-blue-400 transition-colors">Web Dev in Baguiati</a></li>
+                            <li><a href="/budget-website-development-kolkata" className="hover:text-blue-400 transition-colors font-semibold text-green-400">Budget Website (₹4999)</a></li>
+                            <li><a href="#" className="hover:text-blue-400 transition-colors">Salt Lake Branding</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
                         <h4 className="font-bold mb-6">Connect</h4>
                         <ul className="space-y-4 text-slate-400 text-sm">
                             <li><a href="#" className="hover:text-blue-400 transition-colors">Instagram</a></li>
