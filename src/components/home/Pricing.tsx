@@ -122,8 +122,8 @@ const Pricing = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {packages.map((pkg, idx) => (
                         <div key={idx} className={`pricing-card rounded-2xl border-2 p-8 relative flex flex-col h-full transition-all ${pkg.popular
-                                ? 'bg-gradient-to-br from-blue-600 to-purple-600 border-transparent transform scale-105 shadow-2xl scale-y-105'
-                                : 'bg-white border-slate-200 hover:border-blue-500 hover:shadow-xl'
+                            ? 'bg-gradient-to-br from-blue-600 to-purple-600 border-transparent transform scale-105 shadow-2xl scale-y-105'
+                            : 'bg-white border-slate-200 hover:border-blue-500 hover:shadow-xl'
                             }`}>
                             {pkg.popular && (
                                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-2 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-full text-sm font-bold shadow-lg whitespace-nowrap">
@@ -152,7 +152,7 @@ const Pricing = () => {
 
                             <div className="mt-auto">
                                 <a
-                                    href="https://docs.google.com/forms/d/e/1FAIpQLSc7fj_dr0lk-gYq3ywLIYfk4_rc6w2bGzYXLKZ8wBVvCeYK9g/viewform?usp=publish-editor"
+                                    href="https://wa.me/919831209756?text=Hi%20Moofy,%20I'm%20interested%20in%20choosing%20a%20plan!"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className={`block w-full text-center py-4 px-6 rounded-xl font-semibold transition-colors shadow-lg ${pkg.popular ? 'bg-white text-blue-600 hover:bg-slate-50' : 'bg-slate-900 text-white hover:bg-slate-800'

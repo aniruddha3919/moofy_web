@@ -58,7 +58,7 @@ const Hero = () => {
                         View Our Work
                     </a>
                     <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSc7fj_dr0lk-gYq3ywLIYfk4_rc6w2bGzYXLKZ8wBVvCeYK9g/viewform?usp=publish-editor"
+                        href="https://wa.me/919831209756?text=Hi%20Moofy,%20I'm%20interested%20in%20getting%20started%20with%20your%20services!"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-8 py-4 text-base font-semibold bg-white text-slate-900 border-2 border-slate-200 rounded-xl hover:border-blue-600 hover:bg-blue-50 transition-all w-full sm:w-auto text-center"

@@ -40,7 +40,7 @@ const Navbar = () => {
 
                 <div className="flex items-center gap-4">
                     <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSc7fj_dr0lk-gYq3ywLIYfk4_rc6w2bGzYXLKZ8wBVvCeYK9g/viewform?usp=publish-editor"
+                        href="https://wa.me/919831209756?text=Hi%20Moofy,%20I'm%20interested%20in%20your%20services!"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hidden sm:inline-flex px-6 py-2.5 text-sm font-semibold bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:shadow-lg hover:shadow-blue-500/30 transition-all"
@@ -72,7 +72,7 @@ const Navbar = () => {
                         ))}
                         <hr className="border-slate-200 my-2" />
                         <a
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSc7fj_dr0lk-gYq3ywLIYfk4_rc6w2bGzYXLKZ8wBVvCeYK9g/viewform?usp=publish-editor"
+                            href="https://wa.me/919831209756?text=Hi%20Moofy,%20I'm%20interested%20in%20your%20services!"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-full py-3 text-center font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl hover:shadow-lg transition-all"
