@@ -4,17 +4,17 @@ const individualServices = [
     {
         name: '1 Reel / Short',
         description: 'Professional editing included',
-        price: '$15',
+        price: '₹200',
         icon: Zap,
         color: 'blue'
     },
     {
         name: 'Long Video (10 min)',
         description: 'Full video production',
-        price: '$59',
+        price: '₹800 / 10 minute',
         icon: Star,
         color: 'purple',
-        note: '* Extra charges $6/minute after 10 mins'
+        note: '* Extra charges ₹50/minute after 10 mins'
     }
 ];
 
