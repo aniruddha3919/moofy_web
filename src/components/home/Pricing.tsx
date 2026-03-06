@@ -23,7 +23,7 @@ const packages = [
         name: 'Basic Plan',
         tagline: 'Perfect for testing',
         features: [
-            '10 Edited Reels per month',
+            '5 Edited Reels per month',
             '3 Carousel Posts',
             'Content strategy (4 weeks)',
             'Monthly progress report',
@@ -37,7 +37,7 @@ const packages = [
         name: 'Medium Plan',
         tagline: 'Best for growth',
         features: [
-            '18 Premium Reels per month',
+            '8 Premium Reels per month',
             '8 Carousel Posts',
             '1 Website - FREE',
             'Weekly performance report',
@@ -53,7 +53,7 @@ const packages = [
         name: 'Premium Plan',
         tagline: 'Ultimate branding',
         features: [
-            '25 Premium Reels per month',
+            '12 Premium Reels per month',
             '12 Carousel Posts',
             '1 Website - FREE',
             'Daily performance report',
