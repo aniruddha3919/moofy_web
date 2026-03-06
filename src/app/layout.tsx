@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import SideBanner from "@/components/layout/SideBanner";
+import SmoothCursor from "@/components/ui/SmoothCursor";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+  variable: "--font-poppins"
+});
 
 export const metadata: Metadata = {
   title: "Moofy - Social Media Marketing & Website Development",
@@ -17,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${inter.variable} ${poppins.variable} font-sans antialiased`}>
+        <SmoothCursor />
+        <SideBanner />
         {children}
         <Script
           async

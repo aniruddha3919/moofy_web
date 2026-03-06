@@ -56,3 +56,49 @@ body {
 .animate-fade-down {
   animation: fade-down 0.3s ease-out forwards;
 }
+
+/* Shining Effect */
+@keyframes shine {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-shine {
+  background-size: 200% auto;
+  animation: shine 3s linear infinite;
+}
+
+/* Typing Cursor */
+.typing-cursor::after {
+  content: '|';
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+  color: #64748b;
+}
+
+@keyframes blink {
+
+  from,
+  to {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+* {
+  cursor: none !important;
+}
+
+input,
+textarea,
+select {
+  cursor: text !important;
+}

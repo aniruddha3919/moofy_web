@@ -11,7 +11,7 @@ const individualServices = [
     {
         name: 'Long Video (10 min)',
         description: 'Full video production',
-        price: '₹800 / 10 minute',
+        price: '₹800',
         icon: Star,
         color: 'purple',
         note: '* Extra charges ₹50/minute after 10 mins'

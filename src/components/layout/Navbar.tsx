@@ -19,18 +19,22 @@ const Navbar = () => {
     return (
         <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 ${isScrolled ? 'py-2' : 'py-4'}`}>
             <div className="max-w-7xl mx-auto flex items-center justify-between bg-white/80 backdrop-blur-lg border border-slate-200/50 rounded-2xl px-6 py-3 shadow-lg">
-                <div className="flex items-center gap-2">
+                <Link href="/" className="flex items-center gap-2">
                     <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
                         <Zap className="w-6 h-6 text-white" />
                     </div>
                     <span className="font-bold text-xl tracking-tight text-slate-900">Moofy</span>
-                </div>
+                </Link>
 
                 <div className="hidden lg:flex items-center gap-8">
-                    {['Services', 'Our Work', 'Pricing', 'FAQ'].map((item) => (
+                    {['Services', 'Our Work', 'Pricing', 'Blog', 'FAQ'].map((item) => (
                         <Link
                             key={item}
-                            href={item === 'Services' ? '/#services' : `/#${item.toLowerCase().replace(' ', '-')}`}
+                            href={
+                                item === 'Blog'
+                                    ? '/blog'
+                                    : (item === 'Services' ? '/#services' : `/#${item.toLowerCase().replace(' ', '-')}`)
+                            }
                             className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors"
                         >
                             {item}
@@ -60,10 +64,14 @@ const Navbar = () => {
             {mobileMenuOpen && (
                 <div className="lg:hidden mt-4 bg-white border border-slate-200 rounded-2xl p-6 shadow-2xl">
                     <div className="flex flex-col gap-4">
-                        {['Services', 'Our Work', 'Pricing', 'FAQ'].map((item) => (
+                        {['Services', 'Our Work', 'Pricing', 'Blog', 'FAQ'].map((item) => (
                             <Link
                                 key={item}
-                                href={item === 'Services' ? '/#services' : `/#${item.toLowerCase().replace(' ', '-')}`}
+                                href={
+                                    item === 'Blog'
+                                        ? '/blog'
+                                        : (item === 'Services' ? '/#services' : `/#${item.toLowerCase().replace(' ', '-')}`)
+                                }
                                 onClick={() => setMobileMenuOpen(false)}
                                 className="text-lg font-medium text-slate-900 hover:text-blue-600 transition-colors"
                             >

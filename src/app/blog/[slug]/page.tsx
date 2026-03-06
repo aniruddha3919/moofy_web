@@ -11,29 +11,12 @@ interface PostPageProps {
 export default async function PostPage({ params }: PostPageProps) {
     const rawParams = await params
     const slug = decodeURIComponent(rawParams.slug)
-    console.log('Fetching post for decoded slug:', slug)
-
-    if (!process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) {
-        console.error('ERROR: NEXT_PUBLIC_SANITY_PROJECT_ID is NOT defined!')
-    }
-
     const post = await client.fetch(postBySlugQuery, { slug })
-    console.log('Post fetched:', post ? 'Success' : 'Failed (null)')
 
     if (!post) {
         return (
             <div className="max-w-3xl mx-auto px-4 py-20 text-center">
                 <h1 className="text-4xl font-bold text-gray-900">Post not found</h1>
-                <div className="mt-8 p-4 bg-gray-100 rounded text-left font-mono text-sm inline-block">
-                    <p>Debug Info:</p>
-                    <p>- Slug received: "{slug}"</p>
-                    <p>- Project ID: {process.env.NEXT_PUBLIC_SANITY_PROJECT_ID ? 'Loaded (starts with ' + process.env.NEXT_PUBLIC_SANITY_PROJECT_ID.slice(0, 3) + ')' : 'MISSING'}</p>
-                    <p>- Dataset: {process.env.NEXT_PUBLIC_SANITY_DATASET || 'production'}</p>
-                </div>
-                <p className="mt-4 text-gray-600">
-                    Make sure you have clicked "Publish" in Sanity Studio for a post with the slug above.
-                    Also, remember to restart your terminal (npm run dev) after adding .env.local!
-                </p>
             </div>
         )
     }
