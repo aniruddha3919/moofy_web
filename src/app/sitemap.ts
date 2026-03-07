@@ -1,7 +1,19 @@
 import { MetadataRoute } from 'next';
+import { client } from '@/sanity/lib/client';
+import { postsQuery } from '@/sanity/lib/queries';
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = 'https://moofy.in';
+
+    // Fetch all blog posts from Sanity
+    const posts = await client.fetch(postsQuery);
+
+    const blogEntries = posts.map((post: any) => ({
+        url: `${baseUrl}/blog/${post.slug.current}`,
+        lastModified: post.publishedAt ? new Date(post.publishedAt) : new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.7,
+    }));
 
     return [
         {
@@ -34,5 +46,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'weekly',
             priority: 0.8,
         },
+        ...blogEntries,
     ];
 }
